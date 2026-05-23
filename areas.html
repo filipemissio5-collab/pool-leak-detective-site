@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Service Areas — Pool Leak Detective Corp</title>
+<meta name="description" content="Pool leak detection across Broward and Palm Beach County, Florida — Fort Lauderdale, Boca Raton, Coral Springs and more.">
+<link rel="stylesheet" href="style.css">
+<style>
+  .county{margin-bottom:22px;}
+  .county-head{
+    display:flex;align-items:center;gap:12px;margin-bottom:18px;
+  }
+  .county-head .ch-icon{
+    width:46px;height:46px;border-radius:13px;
+    background:linear-gradient(135deg,#E8F1FA,#DAEAF7);color:var(--navy);
+    display:flex;align-items:center;justify-content:center;
+  }
+  .county-head .ch-icon svg{width:24px;height:24px;}
+  .county-head h2{font-size:24px;font-weight:800;color:var(--navy);}
+  .city-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;}
+  .city{
+    background:#fff;border:1px solid var(--line);border-radius:13px;
+    padding:16px;font-size:14px;font-weight:600;color:var(--navy);
+    display:flex;align-items:center;gap:8px;transition:.25s;
+  }
+  .city:hover{border-color:var(--blue);transform:translateY(-3px);box-shadow:0 10px 26px rgba(20,38,74,0.08);}
+  .city .cdot{width:7px;height:7px;background:var(--blue);border-radius:50%;flex-shrink:0;}
+  @media(max-width:860px){.city-grid{grid-template-columns:repeat(2,1fr);}}
+</style>
+</head>
+<body>
+
+<nav id="nav">
+  <a href="index.html" class="logo">
+    <span class="logo-mark">
+      <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <ellipse cx="44" cy="44" rx="37" ry="35" stroke="#1F3A6E" stroke-width="6"/>
+        <path d="M18 31 Q44 16 70 31" stroke="#3B7DC4" stroke-width="5" fill="none" stroke-linecap="round"/>
+        <path d="M19 59 Q44 74 69 57" stroke="#3B7DC4" stroke-width="5" fill="none" stroke-linecap="round"/>
+        <line x1="71" y1="70" x2="94" y2="93" stroke="#3B7DC4" stroke-width="9" stroke-linecap="round"/>
+      </svg>
+    </span>
+    <span class="logo-txt">
+      <span class="lt-main">POOL LEAK DETECTIVE CORP</span>
+      <span class="lt-sub">LEAK DETECTION &amp; REPAIRS</span>
+    </span>
+  </a>
+  <div class="nav-links" id="navLinks">
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="about.html">About</a>
+    <a href="areas.html" class="active">Areas</a>
+    <a href="contact.html">Contact</a>
+  </div>
+  <a href="contact.html" class="nav-cta">Get a quote</a>
+  <button class="nav-toggle" id="navToggle" aria-label="Menu">
+    <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+  </button>
+</nav>
+
+<div class="page-head">
+  <div class="ring pr1"></div><div class="ring pr2"></div>
+  <h1>Where we work</h1>
+  <p>Fast, local pool leak detection across South Florida's two biggest counties.</p>
+</div>
+
+<section>
+  <div class="county reveal">
+    <div class="county-head">
+      <span class="ch-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-5.7-7-11a7 7 0 0114 0c0 5.3-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></span>
+      <h2>Broward County</h2>
+    </div>
+    <div class="city-grid">
+      <div class="city"><span class="cdot"></span>Fort Lauderdale</div>
+      <div class="city"><span class="cdot"></span>Pompano Beach</div>
+      <div class="city"><span class="cdot"></span>Coral Springs</div>
+      <div class="city"><span class="cdot"></span>Deerfield Beach</div>
+      <div class="city"><span class="cdot"></span>Pembroke Pines</div>
+      <div class="city"><span class="cdot"></span>Hollywood</div>
+      <div class="city"><span class="cdot"></span>Plantation</div>
+      <div class="city"><span class="cdot"></span>Davie</div>
+      <div class="city"><span class="cdot"></span>Coconut Creek</div>
+      <div class="city"><span class="cdot"></span>Margate</div>
+      <div class="city"><span class="cdot"></span>Tamarac</div>
+      <div class="city"><span class="cdot"></span>Weston</div>
+    </div>
+  </div>
+
+  <div class="county reveal">
+    <div class="county-head">
+      <span class="ch-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-5.7-7-11a7 7 0 0114 0c0 5.3-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></span>
+      <h2>Palm Beach County</h2>
+    </div>
+    <div class="city-grid">
+      <div class="city"><span class="cdot"></span>Boca Raton</div>
+      <div class="city"><span class="cdot"></span>Delray Beach</div>
+      <div class="city"><span class="cdot"></span>Boynton Beach</div>
+      <div class="city"><span class="cdot"></span>West Palm Beach</div>
+      <div class="city"><span class="cdot"></span>Wellington</div>
+      <div class="city"><span class="cdot"></span>Jupiter</div>
+      <div class="city"><span class="cdot"></span>Lake Worth</div>
+      <div class="city"><span class="cdot"></span>Palm Beach Gardens</div>
+    </div>
+  </div>
+
+  <p style="text-align:center;color:var(--slate);font-size:15px;margin-top:30px;">
+    Don't see your city? <a href="contact.html" style="color:var(--blue);font-weight:600;">Contact us</a> — if you're in Broward or Palm Beach, we likely cover you.
+  </p>
+</section>
+
+<section>
+  <div class="cta-band reveal">
+    <div class="ring r1"></div><div class="ring r2"></div><div class="ring r3"></div>
+    <h2>Local service, fast response.</h2>
+    <p>We're in your county. Let's find your leak.</p>
+    <a href="contact.html" class="btn-primary">Get my free quote</a>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-col">
+      <div class="flogo">
+        <span class="logo-mark">
+          <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <ellipse cx="44" cy="44" rx="37" ry="35" stroke="#ffffff" stroke-width="6"/>
+            <path d="M18 31 Q44 16 70 31" stroke="#5B9BD8" stroke-width="5" fill="none" stroke-linecap="round"/>
+            <path d="M19 59 Q44 74 69 57" stroke="#5B9BD8" stroke-width="5" fill="none" stroke-linecap="round"/>
+            <line x1="71" y1="70" x2="94" y2="93" stroke="#5B9BD8" stroke-width="9" stroke-linecap="round"/>
+          </svg>
+        </span>
+        <span class="logo-txt">
+          <span class="lt-main">POOL LEAK DETECTIVE CORP</span>
+          <span class="lt-sub">LEAK DETECTION &amp; REPAIRS</span>
+        </span>
+      </div>
+      <p>Professional pool leak detection across Broward &amp; Palm Beach County.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Services</h4>
+      <a href="services.html">Leak detection</a>
+      <a href="services.html">Professional diving</a>
+      <a href="services.html">Repairs &amp; plumbing</a>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <a href="about.html">About us</a>
+      <a href="areas.html">Service areas</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <p>(561) 577-4235</p>
+      <p>poolleakdetectivecorp@gmail.com</p>
+      <p>Deerfield Beach, FL 33442</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    © 2026 Pool Leak Detective Corp. · <a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms of Service</a>
+  </div>
+</footer>
+
+<a href="tel:+15615774235" class="float-call">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3 19.5 19.5 0 01-6-6 19.8 19.8 0 01-3-8.7A2 2 0 014.1 2h3a2 2 0 012 1.7c.1.9.4 1.8.7 2.7a2 2 0 01-.5 2.1L8.1 9.9a16 16 0 006 6l1.4-1.2a2 2 0 012.1-.5c.9.3 1.8.6 2.7.7a2 2 0 011.7 2z"/></svg>
+  Call now — (561) 577-4235
+</a>
+<script src="script.js"></script>
+</body>
+</html>

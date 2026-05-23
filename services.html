@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Services — Pool Leak Detective Corp</title>
+<meta name="description" content="Pool leak detection, professional diving, pressure testing and repairs in Broward & Palm Beach County.">
+<link rel="stylesheet" href="style.css">
+<style>
+  .svc-detail{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;margin-bottom:22px;}
+  .svc-block{
+    background:#fff;border:1px solid var(--line);border-radius:22px;padding:40px;
+    transition:.35s;
+  }
+  .svc-block:hover{box-shadow:0 22px 54px rgba(20,38,74,0.1);transform:translateY(-5px);}
+  .svc-block .service-icon{margin-bottom:22px;}
+  .svc-block h3{font-size:23px;font-weight:800;color:var(--navy);margin-bottom:12px;}
+  .svc-block p{color:var(--slate);font-size:15px;line-height:1.7;margin-bottom:16px;}
+  .svc-block ul{list-style:none;}
+  .svc-block ul li{
+    font-size:14px;color:var(--navy);padding:7px 0;display:flex;gap:9px;align-items:center;
+  }
+  .svc-block ul li::before{content:"";width:6px;height:6px;background:var(--blue);border-radius:50%;flex-shrink:0;}
+  .price-strip{
+    background:linear-gradient(135deg,#E8F1FA,#D6E7F5);border-radius:22px;
+    padding:40px;text-align:center;
+  }
+  .price-strip h3{font-size:24px;font-weight:800;color:var(--navy);margin-bottom:8px;}
+  .price-strip p{color:var(--slate);margin-bottom:22px;}
+  .price-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;max-width:680px;margin:0 auto;}
+  .price-card{background:#fff;border-radius:16px;padding:24px;}
+  .price-card .pc-amt{font-size:32px;font-weight:800;color:var(--blue);}
+  .price-card .pc-label{font-size:13px;color:var(--slate);margin-top:4px;}
+  @media(max-width:860px){.svc-detail{grid-template-columns:1fr;}.price-grid{grid-template-columns:1fr;}}
+</style>
+</head>
+<body>
+
+<nav id="nav">
+  <a href="index.html" class="logo">
+    <span class="logo-mark">
+      <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <ellipse cx="44" cy="44" rx="37" ry="35" stroke="#1F3A6E" stroke-width="6"/>
+        <path d="M18 31 Q44 16 70 31" stroke="#3B7DC4" stroke-width="5" fill="none" stroke-linecap="round"/>
+        <path d="M19 59 Q44 74 69 57" stroke="#3B7DC4" stroke-width="5" fill="none" stroke-linecap="round"/>
+        <line x1="71" y1="70" x2="94" y2="93" stroke="#3B7DC4" stroke-width="9" stroke-linecap="round"/>
+      </svg>
+    </span>
+    <span class="logo-txt">
+      <span class="lt-main">POOL LEAK DETECTIVE CORP</span>
+      <span class="lt-sub">LEAK DETECTION &amp; REPAIRS</span>
+    </span>
+  </a>
+  <div class="nav-links" id="navLinks">
+    <a href="index.html">Home</a>
+    <a href="services.html" class="active">Services</a>
+    <a href="about.html">About</a>
+    <a href="areas.html">Areas</a>
+    <a href="contact.html">Contact</a>
+  </div>
+  <a href="contact.html" class="nav-cta">Get a quote</a>
+  <button class="nav-toggle" id="navToggle" aria-label="Menu">
+    <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+  </button>
+</nav>
+
+<div class="page-head">
+  <div class="ring pr1"></div><div class="ring pr2"></div>
+  <h1>Our services</h1>
+  <p>Everything pool-leak related — from finding the leak to fixing it for good.</p>
+</div>
+
+<section>
+  <div class="svc-detail">
+    <div class="svc-block reveal">
+      <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><line x1="16" y1="16" x2="21" y2="21"/></svg></div>
+      <h3>Leak detection</h3>
+      <p>Water loss can come from dozens of places — the shell, the plumbing, the skimmer, the lights. We pinpoint the exact source instead of guessing.</p>
+      <ul>
+        <li>Underground pinpoint sonar</li>
+        <li>Geophone acoustic listening</li>
+        <li>Dye testing</li>
+        <li>Full equipment &amp; structure inspection</li>
+      </ul>
+    </div>
+    <div class="svc-block reveal">
+      <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 12c2-3 4-3 6 0s4 3 6 0 4-3 6 0"/><path d="M3 18c2-3 4-3 6 0s4 3 6 0 4-3 6 0"/><path d="M3 6c2-3 4-3 6 0s4 3 6 0 4-3 6 0"/></svg></div>
+      <h3>Professional diving</h3>
+      <p>Our specialist dives your pool to inspect it underwater — no need to drain it, no waiting days for the water level to drop.</p>
+      <ul>
+        <li>Certified underwater inspection</li>
+        <li>Shell &amp; tile crack detection</li>
+        <li>Main drain &amp; light niche checks</li>
+        <li>No draining required</li>
+      </ul>
+    </div>
+    <div class="svc-block reveal">
+      <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2v6M12 16v6M2 12h6M16 12h6"/><circle cx="12" cy="12" r="3"/></svg></div>
+      <h3>Pressure testing</h3>
+      <p>When the leak is in the plumbing, we test each line under pressure to identify exactly which pipe is failing.</p>
+      <ul>
+        <li>Line-by-line pressure testing</li>
+        <li>Suction &amp; return line diagnosis</li>
+        <li>Identifies hidden underground leaks</li>
+        <li>Clear, documented results</li>
+      </ul>
+    </div>
+    <div class="svc-block reveal">
+      <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 7l-9 9 3 3 9-9"/><path d="M14 7l3-3 4 4-3 3"/></svg></div>
+      <h3>Repairs &amp; plumbing</h3>
+      <p>Once the leak is found, we fix it right — with quality parts and honest pricing. No upsell games.</p>
+      <ul>
+        <li>Skimmer replacement</li>
+        <li>Plumbing line repair</li>
+        <li>Structural &amp; shell repairs</li>
+        <li>Equipment installation</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="price-strip reveal">
+    <h3>Simple, honest pricing</h3>
+    <p>Inspections start at $350 — we confirm your exact price before booking, based on your location.</p>
+    <div class="price-grid">
+      <div class="price-card"><div class="pc-amt">from $350</div><div class="pc-label">Standard pool inspection</div></div>
+      <div class="price-card"><div class="pc-amt">from $450</div><div class="pc-label">Pool + spa inspection</div></div>
+      <div class="price-card"><div class="pc-amt">from $500</div><div class="pc-label">Large residential pool</div></div>
+    </div>
+    <p style="margin-top:20px;font-size:13px;">Final price depends on your pool and location — we always confirm it before booking, with no surprises. Commercial properties priced individually. Repair work quoted separately after diagnosis.</p>
+  </div>
+</section>
+
+<section>
+  <div class="cta-band reveal">
+    <div class="ring r1"></div><div class="ring r2"></div><div class="ring r3"></div>
+    <h2>Ready to find your leak?</h2>
+    <p>Book your inspection — fast response across Broward &amp; Palm Beach.</p>
+    <a href="contact.html" class="btn-primary">Get my free quote</a>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-col">
+      <div class="flogo">
+        <span class="logo-mark">
+          <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <ellipse cx="44" cy="44" rx="37" ry="35" stroke="#ffffff" stroke-width="6"/>
+            <path d="M18 31 Q44 16 70 31" stroke="#5B9BD8" stroke-width="5" fill="none" stroke-linecap="round"/>
+            <path d="M19 59 Q44 74 69 57" stroke="#5B9BD8" stroke-width="5" fill="none" stroke-linecap="round"/>
+            <line x1="71" y1="70" x2="94" y2="93" stroke="#5B9BD8" stroke-width="9" stroke-linecap="round"/>
+          </svg>
+        </span>
+        <span class="logo-txt">
+          <span class="lt-main">POOL LEAK DETECTIVE CORP</span>
+          <span class="lt-sub">LEAK DETECTION &amp; REPAIRS</span>
+        </span>
+      </div>
+      <p>Professional pool leak detection across Broward &amp; Palm Beach County.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Services</h4>
+      <a href="services.html">Leak detection</a>
+      <a href="services.html">Professional diving</a>
+      <a href="services.html">Repairs &amp; plumbing</a>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <a href="about.html">About us</a>
+      <a href="areas.html">Service areas</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <p>(561) 577-4235</p>
+      <p>poolleakdetectivecorp@gmail.com</p>
+      <p>Deerfield Beach, FL 33442</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    © 2026 Pool Leak Detective Corp. · <a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms of Service</a>
+  </div>
+</footer>
+
+<a href="tel:+15615774235" class="float-call">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3 19.5 19.5 0 01-6-6 19.8 19.8 0 01-3-8.7A2 2 0 014.1 2h3a2 2 0 012 1.7c.1.9.4 1.8.7 2.7a2 2 0 01-.5 2.1L8.1 9.9a16 16 0 006 6l1.4-1.2a2 2 0 012.1-.5c.9.3 1.8.6 2.7.7a2 2 0 011.7 2z"/></svg>
+  Call now — (561) 577-4235
+</a>
+<script src="script.js"></script>
+</body>
+</html>
