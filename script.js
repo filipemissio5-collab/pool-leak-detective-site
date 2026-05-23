@@ -161,20 +161,39 @@ document.addEventListener('DOMContentLoaded',function(){
     if(bar)bar.style.width=(quizStep*25)+'%';
   };
 
-  /* ---- Lead forms: hero, quiz, contact ---- */
-  function handleLeadForm(formId,successId){
+  /* ---- Lead forms: hero, quiz, contact ----
+     Sends lead data to the Carlos webhook (Make.com). */
+  var WEBHOOK_URL = "https://hook.us2.make.com/eh3rvtd7s69thps94v8l7l3cg4njmncq";
+
+  function handleLeadForm(formId,successId,formType){
     var form=document.getElementById(formId);
     if(!form)return;
     form.addEventListener('submit',function(e){
       e.preventDefault();
-      /* TODO: connect to Carlos/Make webhook here.
-         For now: show success. Data is in form fields. */
+
+      /* Collect all fields from the form */
+      var data={ source:"website", form_type:formType };
+      var inputs=form.querySelectorAll('input,textarea,select');
+      inputs.forEach(function(field){
+        if(field.name){ data[field.name]=field.value; }
+      });
+
+      /* Show success immediately (don't make the user wait) */
       form.style.display='none';
       var ok=document.getElementById(successId);
       if(ok)ok.style.display='block';
+
+      /* Send the lead to the webhook in the background */
+      fetch(WEBHOOK_URL,{
+        method:"POST",
+        headers:{ "Content-Type":"application/json" },
+        body:JSON.stringify(data)
+      }).catch(function(err){
+        console.log("Lead send error:",err);
+      });
     });
   }
-  handleLeadForm('heroForm','heroSuccess');
-  handleLeadForm('quizForm','quizSuccess');
-  handleLeadForm('quoteForm','formSuccess');
+  handleLeadForm('heroForm','heroSuccess','hero');
+  handleLeadForm('quizForm','quizSuccess','quiz');
+  handleLeadForm('quoteForm','formSuccess','contact');
 })();
