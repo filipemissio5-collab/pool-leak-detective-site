@@ -31,6 +31,20 @@
   .hours-box h4{font-size:14px;font-weight:700;color:var(--navy);margin-bottom:8px;}
   .hours-box p{font-size:14px;color:var(--slate);}
   @media(max-width:860px){.contact-layout{grid-template-columns:1fr;}}
+
+  /* SMS consent checkbox */
+  .consent-field{margin-top:6px;}
+  .consent-label{
+    display:flex;gap:12px;align-items:flex-start;
+    background:#F5F8FB;border:1px solid var(--line);border-radius:12px;
+    padding:14px 16px;cursor:pointer;
+    font-size:13px;line-height:1.55;color:var(--slate);
+  }
+  .consent-label input[type="checkbox"]{
+    flex-shrink:0;width:18px;height:18px;margin-top:2px;cursor:pointer;
+    accent-color:var(--navy);
+  }
+  .consent-label a{color:var(--navy);text-decoration:underline;font-weight:600;}
 </style>
 </head>
 <body>
@@ -130,6 +144,12 @@
         <div class="field">
           <label>Describe the problem</label>
           <textarea name="message" placeholder="How fast is the water dropping? Any visible cracks or wet spots?"></textarea>
+        </div>
+        <div class="field consent-field">
+          <label class="consent-label">
+            <input type="checkbox" name="sms_consent" id="smsConsent" required>
+            <span>I agree to receive SMS messages from Pool Leak Detective Corp about my service request, appointment scheduling, reminders, and follow-ups. Message frequency varies. Message and data rates may apply. Reply STOP to opt out, HELP for help. See our <a href="privacy.html">Privacy Policy</a>.</span>
+          </label>
         </div>
         <button type="submit" class="form-submit">Send request</button>
       </form>
